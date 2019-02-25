@@ -103,6 +103,7 @@ public class Tests {
 		PriorityBlockingQueue<Empleado> lista = new PriorityBlockingQueue<Empleado>();
 		lista.add(new Empleado(Rango.DIRECTOR));
 		lista.add(new Empleado(Rango.OPERADOR));
+		
 		Dispatcher dis = new Dispatcher(10,lista);
 		dis.dispatchCall(new Llamada(3));
 		dis.dispatchCall(new Llamada(5));
